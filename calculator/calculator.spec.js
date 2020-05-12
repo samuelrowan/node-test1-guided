@@ -7,6 +7,8 @@ describe("calculator unit tests", () => {
         expect(calculator.add(-1, 1)).toBe(0)
         expect(calculator.add(1)).toBe(1)
         expect(calculator.add()).toBe(0)
+        expect(calculator.add(2, 2, 2)).toBe(6)
+        expect
     })
     it("subtracts", () => {
         expect(calculator.subtract(2, 2)).toBe(0)
@@ -30,7 +32,8 @@ describe("calculator unit tests", () => {
         expect(calculator.divide(3, 2)).toBe(1.5)
         expect(calculator.divide(1, 0)).toBe(0)
         expect(calculator.divide(-1, 1)).toBe(-1)
-        expect(calculator.divide(1)).toBe(0)
-        expect(calculator.divide()).toBe(0)
+        expect(calculator.divide(1)).toBe(1)
+        expect(calculator.divide()).toBe(1)
+        expect(() => calculator.divide("hello", "world")).toThrow()
     })
 })
