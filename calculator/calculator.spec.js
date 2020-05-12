@@ -13,7 +13,7 @@ describe("calculator unit tests", () => {
         expect(calculator.subtract(2, 3)).toBe(-1)
         expect(calculator.subtract(1, 0)).toBe(1)
         expect(calculator.subtract(-1, 1)).toBe(-2)
-        expext(calculator.subtract(-1, -2)).toBe(1)
+        expect(calculator.subtract(-1, -2)).toBe(1)
         expect(calculator.subtract(1)).toBe(1)
         expect(calculator.subtract()).toBe(0)
     })
